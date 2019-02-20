@@ -23,6 +23,7 @@ public class DropdownHandeling {
 		// selectValueFromDropdown(dropdown, "Option 1");
 		System.out.println(select.isMultiple()); // do dropdown element have multiple value selection feature?
 		List<WebElement> listDropdownElements = select.getOptions();
+		System.out.print(select.isMultiple());
 		int TotalElements = listDropdownElements.size() - 1;// to get size of dropdown
 		System.out.println("Total Elements in dropdown are " + TotalElements);
 		System.out.println("dropdown values are ");
