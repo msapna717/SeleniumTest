@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9135" started-at="2019-02-20T11:12:28Z" finished-at="2019-02-20T11:12:37Z">
+  <suite name="Default suite" duration-ms="21768" started-at="2019-02-25T07:34:34Z" finished-at="2019-02-25T07:34:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9135" started-at="2019-02-20T11:12:28Z" finished-at="2019-02-20T11:12:37Z">
-      <class name="dropdownHandling.BootstrapDropboxHandling">
-        <test-method status="PASS" signature="test()[pri:0, instance:dropdownHandling.BootstrapDropboxHandling@d2cc05a]" name="test" duration-ms="9089" started-at="2019-02-20T11:12:28Z" finished-at="2019-02-20T11:12:37Z">
+    <test name="Default test" duration-ms="21768" started-at="2019-02-25T07:34:34Z" finished-at="2019-02-25T07:34:56Z">
+      <class name="frameHandling.NestedFrames">
+        <test-method status="PASS" signature="nestedFramesHandling()[pri:0, instance:frameHandling.NestedFrames@d2cc05a]" name="nestedFramesHandling" duration-ms="21722" started-at="2019-02-25T07:34:34Z" finished-at="2019-02-25T07:34:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- dropdownHandling.BootstrapDropboxHandling -->
+        </test-method> <!-- nestedFramesHandling -->
+      </class> <!-- frameHandling.NestedFrames -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
