@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -17,39 +18,26 @@ public class MultiFrameHandling {
 		driver.manage().window().maximize();
 		driver.get("http://demo.automationtesting.in/Frames.html");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		// clicking on button
 		driver.findElement(By.xpath("//a[@href='#Multiple']")).click();
-		driver.findElement(By.id("Multiple")).click();
 		// prints the total number of frames
 		int size = driver.findElements(By.id("Multiple")).size();
 		System.out.println("toatl frames : " + size);
 		// Switching the Outer Frame
-		driver.switchTo().frame(0);
-		// Printing the text in outer frame
-		System.out.println(driver.findElement(By.id("Multiple")).getText());
-		// prints the total number of frames inside outer frame
-		size = driver.findElements(By.tagName("iframe")).size();
-		System.out.println("Total Frames --" + size);
-		// Switching to innerframe
-		driver.switchTo().frame(0);
-		// Printing the text in inner frame
-		// System.out.println(driver.findElement(By.xpath("xpath of the inner element
-		// ")).getText());
-		// printing text in textbox
-		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("sapna mishra");
-		// Switching to defaultContent
+		WebElement outerFrame = driver.findElement(By.xpath("//iframe[@src='MultipleFrames.html']"));
+		driver.switchTo().frame(outerFrame);
+		System.out.println("Outer Frame");
+		// Switching the inner Frame
+		WebElement innerFrame = driver
+				.findElement(By.xpath("//iframe[contains(text(),'<p>Your browser does not support iframes.</p>')]"));
+		driver.switchTo().frame(innerFrame);
+		System.out.println("Inner Frame");
+// Printing the text in inner frame
+		WebElement textbox = driver.findElement(By.xpath("//input[@type='text']"));
+		textbox.sendKeys("text entered in inner frame textbox");
+		System.out.println("text entered successfully");
 		driver.switchTo().defaultContent();
 
-//		for (int i = 0; i <= size; i++) {
-//			driver.switchTo().frame(i);
-//			int total = driver.findElements(By.id("Multiple")).size();
-//			System.out.println(total);
-//			driver.switchTo().defaultContent();
-//		}
-//		driver.switchTo().frame(0);
-//		driver.switchTo().frame(1);
-//		// driver.findElement(By.xpath("(//iframe[@src='MultipleFrames.html'])")).click();
-//		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("sapna mishra");
-//		System.out.println("You have entered text in frame text box");
 		driver.quit();
 	}
 }

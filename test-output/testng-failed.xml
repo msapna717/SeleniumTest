@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="frameHandling.NestedFrames">
+      <class name="frameHandling.MultiFrameHandling">
         <methods>
-          <include name="nestedFramesHandling"/>
+          <include name="frameWithinFrame"/>
         </methods>
-      </class> <!-- frameHandling.NestedFrames -->
+      </class> <!-- frameHandling.MultiFrameHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
