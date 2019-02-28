@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="frameHandling.MultiFrameHandling">
+      <class name="fileUplaodDownlaod.FileDownload">
         <methods>
-          <include name="frameWithinFrame"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="fileDownloadingTest"/>
         </methods>
-      </class> <!-- frameHandling.MultiFrameHandling -->
+      </class> <!-- fileUplaodDownlaod.FileDownload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

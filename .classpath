@@ -9,5 +9,7 @@
 	<classpathentry kind="lib" path="/Users/sapnamishra/Documents/Jars/commons-io-2.6/commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="/Users/sapnamishra/Documents/Jars/Selenium server standalone/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/sapnamishra/Documents/Jars/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
