@@ -12,7 +12,7 @@ public class FrameHandling {
 
 	@Test
 	public static void singleFrameHandling() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/sapnamishra/Documents/WebDriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/sapnamishra/Documents/WebDriver/chrome2.46/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://demo.automationtesting.in/Frames.html");

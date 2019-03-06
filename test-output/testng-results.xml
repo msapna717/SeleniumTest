@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20597" started-at="2019-03-01T06:10:40Z" finished-at="2019-03-01T06:11:00Z">
+  <suite name="Default suite" duration-ms="23807" started-at="2019-03-06T12:40:07Z" finished-at="2019-03-06T12:40:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20597" started-at="2019-03-01T06:10:40Z" finished-at="2019-03-01T06:11:00Z">
-      <class name="fileUplaodDownlaod.GmailAttachFile">
-        <test-method status="PASS" signature="setup()[pri:0, instance:fileUplaodDownlaod.GmailAttachFile@cb5822]" name="setup" is-config="true" duration-ms="4856" started-at="2019-03-01T06:10:40Z" finished-at="2019-03-01T06:10:45Z">
+    <test name="Default test" duration-ms="23807" started-at="2019-03-06T12:40:07Z" finished-at="2019-03-06T12:40:31Z">
+      <class name="dropdownHandling.Jet2">
+        <test-method status="PASS" signature="jetAirwaysDropdownHandling()[pri:0, instance:dropdownHandling.Jet2@c038203]" name="jetAirwaysDropdownHandling" duration-ms="23587" started-at="2019-03-06T12:40:08Z" finished-at="2019-03-06T12:40:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="fileAttachTest()[pri:0, instance:fileUplaodDownlaod.GmailAttachFile@cb5822]" name="fileAttachTest" duration-ms="15532" started-at="2019-03-01T06:10:45Z" finished-at="2019-03-01T06:11:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fileAttachTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:fileUplaodDownlaod.GmailAttachFile@cb5822]" name="tearDown" is-config="true" duration-ms="177" started-at="2019-03-01T06:11:00Z" finished-at="2019-03-01T06:11:00Z">
+        </test-method> <!-- jetAirwaysDropdownHandling -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:dropdownHandling.Jet2@c038203]" name="tearDown" is-config="true" duration-ms="164" started-at="2019-03-06T12:40:31Z" finished-at="2019-03-06T12:40:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- fileUplaodDownlaod.GmailAttachFile -->
+      </class> <!-- dropdownHandling.Jet2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

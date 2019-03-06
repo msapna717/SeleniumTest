@@ -13,7 +13,7 @@ public class BootstrapDropboxHandling {
 
 	@Test
 	public static void test() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/sapnamishra/Documents/WebDriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/sapnamishra/Documents/WebDriver/chrome2.46/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.jquery-az.com/jquery/demo.php?ex=152.0_1");
