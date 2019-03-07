@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -14,7 +14,7 @@ public class playPause {
 	WebDriver driver;
 
 	@Test
-	public void youtubeVideoTest() throws InterruptedException {
+	public void youtubeVideoTest() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "/Users/sapnamishra/Documents/WebDriver/chrome2.46/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -29,21 +29,18 @@ public class playPause {
 		driver.findElement(By.xpath(
 				"//a[@title='Selenium Tutorial For Beginners | What Is Selenium? | Selenium Automation Testing Tutorial | Edureka']"))
 				.click();
-
-		// play pause
 		WebElement playButton = driver.findElement(By.xpath("//button[@class='ytp-play-button ytp-button']"));
-		WebElement pauseButton = driver.findElement(By.xpath("//button[@title='Pause (k)']"));
+		WebElement slider = driver.findElement(By.xpath("//div[@class='ytp-scrubber-container']"));
+		Actions action = new Actions(driver);
+		action.moveToElement(playButton).build().perform();
+		action.moveToElement(playButton).dragAndDropBy(slider, 250, 0);
 
-		Assert.assertTrue(playButton.isEnabled());
-
-		String title = (playButton.getAttribute("title"));
-		System.out.println(title + "button is visible");
-		Thread.sleep(3000);
-		playButton.click();
-		Thread.sleep(3000);
-		Assert.assertTrue(pauseButton.isEnabled());
-		String title1 = (pauseButton.getAttribute("title"));
-		System.out.println(title1 + "button is visible");
+		String excpectedButtonTitle = "Play (k)";
+		String actualButtonTitle = playButton.getAttribute("title");
+		System.out.println(actualButtonTitle);
+		if (actualButtonTitle.equals(excpectedButtonTitle)) {
+			System.out.println("testcase passed: button title" + actualButtonTitle);
+		}
 
 	}
 

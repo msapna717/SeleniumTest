@@ -21,7 +21,7 @@ public class GmailAttachFile {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		String url = "https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
 		driver.get(url);
 
@@ -53,10 +53,8 @@ public class GmailAttachFile {
 
 		WebElement compose = driver.findElement(By.cssSelector(".aic .z0 div"));
 		compose.click();
-
 		WebElement to = driver.findElement(By.cssSelector(".oj div textarea"));
 		to.sendKeys("sapna.mishra@sourcebits.com");
-
 		WebElement subject = driver.findElement(By.cssSelector(".aoD.az6 input"));
 		subject.sendKeys("Test email");
 		WebElement BodyofEmail = driver.findElement(By.cssSelector(".Ar.Au div"));
@@ -64,6 +62,7 @@ public class GmailAttachFile {
 		WebElement attachClip = driver.findElement(By.xpath("//div[@class='a1 aaA aMZ']"));
 		attachClip.click();
 		Runtime.getRuntime().exec("osascript " + "/Users/sapnamishra/Desktop/testFiles/upload.scpt");
+
 		WebElement Send = driver.findElement(By.cssSelector("tr.btC td:nth-of-type(1) div:nth-of-type(2)"));
 		Send.click();
 
