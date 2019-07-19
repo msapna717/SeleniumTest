@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,15 +102,44 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardSoftAssertionTest" hash-for-method="hardAssertion">hardAssertion</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardSoftAssertionTest" hash-for-method="softAssertion">softAssertion</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardAssertion" hash-for-method="assertEquals">assertEquals</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardAssertion" hash-for-method="assertFalse">assertFalse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardAssertion" hash-for-method="assertNotEquals">assertNotEquals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardAssertion" hash-for-method="assertNotNull">assertNotNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardAssertion" hash-for-method="assertNull">assertNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Assertion.HardAssertion" hash-for-method="assertTrue">assertTrue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -125,58 +154,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Assertion.HardSoftAssertionTest</span>
+              <span class="class-name">Assertion.HardAssertion</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="hardAssertion">
-                  </a> <!-- hardAssertion -->
-                  <span class="method-name">hardAssertion</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [assertion]
+                  <a name="assertEquals">
+                  </a> <!-- assertEquals -->
+                  <span class="method-name">assertEquals</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [This assertion will fail] but found [assertion]
 	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotSame(Assert.java:772)
-	at org.testng.Assert.assertNull(Assert.java:708)
-	at org.testng.Assert.assertNull(Assert.java:697)
-	at Assertion.HardSoftAssertionTest.hardAssertion(HardSoftAssertionTest.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="softAssertion">
-                  </a> <!-- softAssertion -->
-                  <span class="method-name">softAssertion</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [null] but found [assertion]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at Assertion.HardSoftAssertionTest.softAssertion(HardSoftAssertionTest.java:30)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at Assertion.HardAssertion.assertEquals(HardAssertion.java:11)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -208,10 +201,53 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Assertion.HardAssertion</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertFalse">
+                  </a> <!-- assertFalse -->
+                  <span class="method-name">assertFalse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertNotEquals">
+                  </a> <!-- assertNotEquals -->
+                  <span class="method-name">assertNotEquals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertNotNull">
+                  </a> <!-- assertNotNull -->
+                  <span class="method-name">assertNotNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertNull">
+                  </a> <!-- assertNull -->
+                  <span class="method-name">assertNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertTrue">
+                  </a> <!-- assertTrue -->
+                  <span class="method-name">assertTrue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/5t/bqng7zh538j47k6ktzqgmbn00000gn/T/testng-eclipse--703188531/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/5t/bqng7zh538j47k6ktzqgmbn00000gn/T/testng-eclipse-1384314505/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -220,7 +256,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Assertion.HardSoftAssertionTest&quot;/&gt;
+      &lt;class name=&quot;Assertion.HardAssertion&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -260,20 +296,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'hardAssertion')
-data.setCell(0, 2, 'Assertion.HardSoftAssertionTest')
-data.setCell(0, 3, 13);
+data.setCell(0, 1, 'assertEquals')
+data.setCell(0, 2, 'Assertion.HardAssertion')
+data.setCell(0, 3, 19);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'softAssertion')
-data.setCell(1, 2, 'Assertion.HardSoftAssertionTest')
-data.setCell(1, 3, 4);
+data.setCell(1, 1, 'assertNull')
+data.setCell(1, 2, 'Assertion.HardAssertion')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'assertTrue')
+data.setCell(2, 2, 'Assertion.HardAssertion')
+data.setCell(2, 3, 3);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'assertNotNull')
+data.setCell(3, 2, 'Assertion.HardAssertion')
+data.setCell(3, 3, 3);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'assertNotEquals')
+data.setCell(4, 2, 'Assertion.HardAssertion')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'assertFalse')
+data.setCell(5, 2, 'Assertion.HardAssertion')
+data.setCell(5, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 ms</span>
+              <span class="suite-total-time">Total running time: 32 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -299,18 +351,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Assertion.HardSoftAssertionTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Assertion.HardAssertion</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">hardAssertion</span>
+                <span class="method-name">assertEquals</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">softAssertion</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-name">assertFalse</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertNotEquals</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertNotNull</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertNull</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertTrue</span>
+                <span class="method-start">56 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
